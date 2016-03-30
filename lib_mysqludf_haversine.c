@@ -189,6 +189,7 @@ haversine_distance( UDF_INIT* initid, UDF_ARGS* args, char* is_null, char *error
 
 		if (strcmp(args->args[4], "ft") == 0) result *= 3280.8399;
 		if (strcmp(args->args[4], "mi") == 0) result *= 0.621371192;
+		if (strcmp(args->args[4], "sm") == 0) result *=0.539957;
 	}
 
 	return result;
